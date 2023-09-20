@@ -1,6 +1,6 @@
 syntax on
 set number
-colorscheme lunaperche
+colorscheme iceberg
 set background=dark
 set nocompatible
 filetype on
@@ -20,12 +20,20 @@ set history=1000
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set laststatus=2
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
+
 
 call plug#begin('~/.vim/plugged')
 
 	Plug 'preservim/nerdtree'
-	Plug 'vim-airline/vim-airline'
 	Plug 'tpope/vim-surround'
 	Plug 'ervandew/supertab'
+	Plug 'ryanoasis/vim-devicons'
+ 	Plug 'itchyny/lightline.vim'
+	Plug 'airblade/vim-gitgutter'
 
 call plug#end()
