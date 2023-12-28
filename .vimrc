@@ -1,6 +1,8 @@
 syntax on
 set number
-colorscheme iceberg
+colorscheme lunaperche 
+let NERDTreeMinimalUI=1
+set backspace=indent,eol,start
 set background=dark
 set nocompatible
 filetype on
